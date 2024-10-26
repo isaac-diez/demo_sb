@@ -1,4 +1,4 @@
-package com.sb_isaac_1.demo;
+package dev.example.taskList.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
