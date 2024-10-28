@@ -40,4 +40,8 @@ public class Task {
             inverseJoinColumns = @JoinColumn(name = "TAG_FK_ID")
     )
     private List<Tag> tags = new ArrayList<>();
+
+    public boolean getCompleted() {
+        return completed;
+    }
 }
