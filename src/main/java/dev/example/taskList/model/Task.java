@@ -27,7 +27,7 @@ public class Task {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "USER_FK_ID")
-    private User mappedUser;
+    private AppUser mappedAppUser;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PROJECT_FK_ID")

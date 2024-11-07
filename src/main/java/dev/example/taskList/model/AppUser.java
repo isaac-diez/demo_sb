@@ -5,14 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class User {
+@Entity
+public class AppUser {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class User {
     private String username;
     private String email;
 
-    @OneToMany(mappedBy = "mappedUser", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "mappedAppUser", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Task> tasks;
 
 
