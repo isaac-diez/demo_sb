@@ -31,7 +31,7 @@ import java.util.Optional;
 
         @Override
         public AppUser updateUser(Long id, AppUser user) {
-            if (userRepository.existsById(id)) {
+            if (userRepository.existsById(Long.valueOf(id))) {
                 user.setId(id);
                 return userRepository.save(user);
             }

@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -20,8 +20,8 @@ public class Task {
     private int id;
     private String title;
     private String description;
-    private LocalDate dueDate;
-    private LocalDate createdDate;
+    private Date dueDate;
+    private Date createdDate;
     //private Enum state;
     private boolean completed;
 
